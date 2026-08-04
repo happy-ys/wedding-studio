@@ -4,9 +4,9 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <title>웨딩 스튜디오 취향 셀렉트 · 내 취향 TOP 10</title>
-<meta name="description" content="웨딩 스튜디오 65곳 중에서 1:1 비교로 내 취향 TOP 10을 뽑아보세요. 각 스튜디오 공식 포트폴리오 링크 포함." />
+<meta name="description" content="웨딩 스튜디오 57곳 중에서 1:1 비교로 내 취향 TOP 10을 뽑아보세요. 각 스튜디오 공식 포트폴리오 링크 포함." />
 <meta property="og:title" content="웨딩 스튜디오 취향 셀렉트" />
-<meta property="og:description" content="65곳 중에서 내 취향 TOP 10 뽑기 · 공식 포트폴리오 링크 포함" />
+<meta property="og:description" content="57곳 중에서 내 취향 TOP 10 뽑기 · 공식 포트폴리오 링크 포함" />
 <meta property="og:type" content="website" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%92%8D%3C/text%3E%3C/svg%3E" />
 <style>
@@ -29,7 +29,7 @@ const {
 } = React;
 
 /* ───────────────────────── 데이터 ───────────────────────── */
-const STUDIOS = ["21그램하우스", "S 스튜디오", "고유", "어바이드 (구.그사순)", "그레이스케일", "꼬모 스튜디오", "노우드", "느와르블랑하우스", "다다스튜디오 리허설", "라앤디", "라크마", "랑게", "로 스튜디오하우스", "로그에이", "르노브", "리저브하우스", "멜로필드 스튜디오", "멜린", "모닌 스튜디오", "무이", "바로오늘이그날", "박개인주의", "발렌", "보어하우스", "볼라르", "부겐빌리아", "비마이", "비비엔다", "비슈어", "세미앙", "세인트지지오티하우스", "소네", "소르아", "소피소", "스튜디오 콜레트", "스튜디오 피프티", "식스플로어", "아우드", "아이브", "아카이브", "아키", "아테소", "아트버스픽쳐", "앤드류권", "에버른", "오브라마에스트라", "오중석스튜디오", "원규", "유온드", "이경호 포토그라피 스튜디오", "이브로제", "일드한남", "제이유 스튜디오", "줄리의정원", "지엥마지", "카마스튜디오", "클로드", "테이크마인드", "포에버마인", "플라츠", "플레하우스", "피아", "헤이스", "헤이쥬드", "헤이허니"];
+const STUDIOS = ["FANU", "고유", "그레이스케일", "꼬모스튜디오", "노아고즈", "노우드스튜디오", "노트레세느", "논코니엘", "클로드 (청담,논현)", "느와르블랑하우스", "다다스튜디오", "라앤디", "라크마스튜디오", "로그에이", "리저브", "메종드소울페이지", "멜로필드", "멜린스튜디오", "모닌", "목화", "무이스튜디오", "바로오늘이그날", "박개인주의", "발렌", "보어하우스", "볼라르", "부겐빌리아", "비마이", "비비엔다", "세미앙", "소네", "소르아", "소피소", "스튜디오네쥬", "스튜디오아이브", "스튜디오이오", "스튜디오콜레트", "스튜디오피프티", "아우드스튜디오", "아테소", "아트버스터픽쳐", "알리아", "앤드류권", "어바이드", "에버른", "유온드", "이경호포토그라피", "이브로제하우스", "일드한남", "줄리의정원", "지엥마지", "클레브스튜디오", "테이크마인드", "피아스튜디오", "헤이스", "헤이쥬드", "헤이허니"];
 
 /* ───────────────── 머지소트 엔진 (사람 비교 기반) ───────────────── */
 // runs: 정렬된 부분리스트들의 큐. merge: 진행 중인 병합 상태.
@@ -195,26 +195,27 @@ const CSS = `
 /* ───────────── 공식 직링크 (홈페이지 우선, 없으면 공식 인스타) ───────────── */
 const cleanName = n => n.replace(/\s*\(.*?\)\s*/g, " ").replace(/\s+/g, " ").trim();
 const LINKS = {
-  "21그램하우스": "https://www.instagram.com/21gram_official/",
-  "S 스튜디오": "https://www.instagram.com/studios_company/",
+  "FANU": "https://www.instagram.com/fanu.studio/",
   "고유": "https://www.instagram.com/studio.goyou/",
-  "어바이드 (구.그사순)": "https://www.instagram.com/he_love_moment/",
   "그레이스케일": "https://gray-scale.co.kr/",
-  "꼬모 스튜디오": "https://www.instagram.com/ccomostudio_official/",
-  "노우드": "http://www.noud.kr/",
+  "꼬모스튜디오": "https://www.instagram.com/ccomostudio_official/",
+  "노아고즈": "https://www.instagram.com/noah_goz/",
+  "노우드스튜디오": "http://www.noud.kr/",
+  "노트레세느": "https://www.instagram.com/notre_scene/",
+  "논코니엘": "https://www.instagram.com/nonco_niel/",
+  "클로드 (청담,논현)": "https://www.instagram.com/studio__claude/",
   "느와르블랑하우스": "http://www.noirblanc.co.kr/",
-  "다다스튜디오 리허설": "https://www.instagram.com/dada.studio.roseselavy/",
+  "다다스튜디오": "https://www.instagram.com/dada.studio.roseselavy/",
   "라앤디": "https://www.instagram.com/laendy_studio/",
-  "라크마": "https://www.instagram.com/lacmastudio/",
-  "랑게": "https://www.instagram.com/langhe_official/",
-  "로 스튜디오하우스": "https://ro-studio.co.kr/",
+  "라크마스튜디오": "https://www.instagram.com/lacmastudio/",
   "로그에이": "https://www.studiologa.com/",
-  "르노브": "https://www.instagram.com/langhe_official/",
-  "리저브하우스": "https://reservehaus.com/",
-  "멜로필드 스튜디오": "https://www.instagram.com/melofield/",
-  "멜린": "https://www.instagram.com/mellinstudio/",
-  "모닌 스튜디오": "https://www.instagram.com/moninstudio/",
-  "무이": "http://mui.co.kr/",
+  "리저브": "https://reservehaus.com/",
+  "메종드소울페이지": "https://www.instagram.com/maisonde_soulpage/",
+  "멜로필드": "https://www.instagram.com/melofield/",
+  "멜린스튜디오": "https://www.instagram.com/mellinstudio/",
+  "모닌": "https://www.instagram.com/moninstudio/",
+  "목화": "https://www.instagram.com/studio_mokhwa/",
+  "무이스튜디오": "http://mui.co.kr/",
   "바로오늘이그날": "https://www.instagram.com/today_is_the_day_studio/",
   "박개인주의": "https://www.instagram.com/individual_ism/",
   "발렌": "https://valenestudio.com/",
@@ -223,40 +224,31 @@ const LINKS = {
   "부겐빌리아": "https://www.instagram.com/bougain.villea35/",
   "비마이": "https://www.instagram.com/_bemy_studio/",
   "비비엔다": "https://www.obrapictures.co.kr/VIVIENDA",
-  "비슈어": "http://besure.co.kr/",
   "세미앙": "https://www.instagram.com/_semia.n/",
-  "세인트지지오티하우스": "http://www.stggot.com/",
   "소네": "https://www.instagram.com/studiosonne/",
   "소르아": "https://www.sorrawedding.com/",
   "소피소": "https://soffiso.kr/",
-  "스튜디오 콜레트": "https://www.instagram.com/studio___colette/",
-  "스튜디오 피프티": "https://www.instagram.com/50.studio_fifty_/",
-  "식스플로어": "https://www.instagram.com/st_sixth_floor/",
-  "아우드": "https://www.instagram.com/aoud_studio/",
-  "아이브": "https://www.instagram.com/studio__ive/",
-  "아카이브": "http://archive-studio.com/",
-  "아키": "https://www.instagram.com/arkki_studio/",
+  "스튜디오네쥬": "https://www.instagram.com/nejue_official_/",
+  "스튜디오아이브": "https://www.instagram.com/studio__ive/",
+  "스튜디오이오": "https://www.instagram.com/eostudioo/",
+  "스튜디오콜레트": "https://www.instagram.com/studio___colette/",
+  "스튜디오피프티": "https://www.instagram.com/50.studio_fifty_/",
+  "아우드스튜디오": "https://www.instagram.com/aoud_studio/",
   "아테소": "https://www.instagram.com/ateso_official/",
-  "아트버스픽쳐": "https://www.artbusterpicture.com/",
+  "아트버스터픽쳐": "https://www.artbusterpicture.com/",
+  "알리아": "https://www.instagram.com/aalia_official_/",
   "앤드류권": "https://www.andrewkwon.co.kr/",
+  "어바이드": "https://www.instagram.com/he_love_moment/",
   "에버른": "https://www.instagram.com/everne_studio/",
-  "오브라마에스트라": "https://www.obrapictures.co.kr/",
-  "오중석스튜디오": "https://geniusoh.kr/",
-  "원규": "https://www.wonkyu.co.kr/",
   "유온드": "https://www.instagram.com/uond.photography/",
-  "이경호 포토그라피 스튜디오": "https://www.leekyungho-photograph.com/",
-  "이브로제": "https://www.instagram.com/yvesrose_haus/",
+  "이경호포토그라피": "https://www.leekyungho-photograph.com/",
+  "이브로제하우스": "https://www.instagram.com/yvesrose_haus/",
   "일드한남": "https://www.instagram.com/ile_de_hannam/",
-  "제이유 스튜디오": "https://www.ju-photography.com/justudio",
   "줄리의정원": "http://www.juliesgarden.co.kr/",
   "지엥마지": "https://www.instagram.com/sienmarge_st/",
-  "카마스튜디오": "https://www.kamastudio.co.kr/",
-  "클로드": "https://www.instagram.com/studio__claude/",
+  "클레브스튜디오": "https://www.instagram.com/cleve_studio/",
   "테이크마인드": "https://www.instagram.com/takemind/",
-  "포에버마인": "https://forevermine.co.kr/",
-  "플라츠": "https://www.instagram.com/platz_people/",
-  "플레하우스": "https://www.instagram.com/plaehouse/",
-  "피아": "https://studiofia.com/",
+  "피아스튜디오": "https://studiofia.com/",
   "헤이스": "https://www.instagram.com/studiohayes/",
   "헤이쥬드": "https://www.instagram.com/heyjude_st/",
   "헤이허니": "https://www.instagram.com/heyhoney_st/"
@@ -441,7 +433,7 @@ function WeddingStudioPicker() {
       margin: "14px 0 18px",
       fontWeight: 800
     }
-  }, "65곳 중에서", /*#__PURE__*/React.createElement("br", null), "내 취향 TOP 10을 찾아요"), /*#__PURE__*/React.createElement("hr", {
+  }, "57곳 중에서", /*#__PURE__*/React.createElement("br", null), "내 취향 TOP 10을 찾아요"), /*#__PURE__*/React.createElement("hr", {
     className: "wsp-rule"
   }), /*#__PURE__*/React.createElement("ol", {
     style: {
